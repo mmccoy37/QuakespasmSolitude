@@ -1,0 +1,178 @@
+      APDM3 - Pretend Dead Friend
+=========================================
+SINGLE AND MULTI-PLAYER LEVEL FOR QUAKE 1
+
+*title: Pretend Dead Friend
+*Release: 09.05.2007
+*Filename: APDM3.zip
+	APDM3.bsp
+	APDM3.txt
+	APDM3.rmf (worldcraft source map)
+	APDM3.map (standard source map)
+Single player: YES (40 monsters, no skill selection)
+Cooperative: YES (2 spawns)
+Deathmatch: YES (6 spawns)
+
+*Author: Andrew "than" Palmer
+*E-mail: andyp.123@gmail.com
+*Homepage: http://than.leveldesign.org/
+
+Thanks to:
+	-Bengt and Tyrann for their brilliant compile tools.
+	-The Func_msgboard and #terrafusion gang for all their help over the years.
+	-id Software for Quake.
+	-Ben Morris for Worldcraft 1.6a and Mike Jackman for TexMex.
+	-All those who still play Quake 10 years on. You have good taste :)
+	-Martin "Killer" Kilcoyne for working with me on KT-imPAKt for Q2, for
+		which I released the original version of this map.
+
+
+
+Installation
+------------
+Copy the file APDM3.bsp to your Quake/ID1/maps directory, then run the game and type
+"map DM3RMX" at the console to load the map. If you want to play it in deathmatch, you
+need to activate deathmatch mode first. If you don't know how, read the Quake manual.
+
+
+Compatibility
+-------------
+This level has been fully tested with FitzQuake (by Metlslime) and unmodified WinQuake.
+However, I am almost certain there will not be any problems loading it in other engines 
+as it is a very simple level.
+
+Here are links to some good GL engines to use for playing Quake.
+
+Fitzquake: http://www.celephais.net/fitzquake/
+Enhanced Win/GLQuake: http://user.tninet.se/~xir870k/
+
+
+
+LEVEL INFORMATION
+=================
+
+This is a remake of KTDM4 - Pretend Best Friend, which was a tiny deathmatch level I
+made for the KT-imPAKt map pack for Quake 2. Since I had a gap in my Quake DM levels
+I thought I would fill it up with something and this seemed like the ideal candidate
+because I had the source map and the original was small. I thought it would be a 
+quick conversion and would be dm only.
+
+However, as I started converting the map, I realised that the brushwork of the original
+map was pretty horrible and needed a lot of tidying up. Also, the tech themed architecture
+designed for Quake 2 did not fit with Quake, so I decided to rebuild most of it.
+
+Whilst the conversion didn't take me a huge amount of time (just a few days or so), it
+did take a little longer than I expected, though I have also added a single player mode
+to the level too, as I thought nobody would bother if it was DM only. So now it's
+basically an SP conversion of a DM level in the same vein as DM3RMX :)
+
+
+
+Story
+-----
+Bernard the Quake Marine was fond of playing football in the courtyard in front of the
+military base at which he was serving. He would always have a kick about with Dave and the
+other Marines of the Maroon Legion after a mission to unwind. However, things had been
+uneventful at the base for weeks, with nothing to do but scrub floors and polish boots.
+Thankfully, all this downtime also afforded the Legion a lot of time to practise football
+outside.
+
+Despite Bernard's fondness for football, he was a terrible player. Not only was he always
+selected last when the usual captains - Dave and Roger - were choosing the teams, but he
+ALWAYS ended up in goal. The other marines would joke that he'd make a better goalpost than
+goal keeper and that he was only in goal because he was the fattest and most likely to
+stop a goal by accident but Bernard didn't care - he loved football.
+
+One day after letting in a particularly embarrassing shot from Roger, Bernard was searching
+for the football. It had rolled off somewhere behind the rocket launchers they had propped
+up as goalposts and dissapeared around the back of the toilets. Bernard was looking
+hard but he couldn't see it. It was dark, smelly and wet around there. He knew that when
+he found the ball it would probably be covered in piss and be all stinky. Although he
+Bernard would have to pick the ball up to retrieve it, he was also a little excited at the
+prospect of handing it to Dave for the centre kick - Dave's punishment for choosing Bernard
+last again.
+
+Bernard could not find the ball, but he spotted an open manhole. "what's this?" he wondered.
+Bernard thought the ball must have rolled down into the hole so he decided to climb down and
+get it. Although there was a sewer below, he was pretty sure he would find the ball floating
+near the bottom of the ladder down because the sewers were never cleaned out - there would
+be no current to take the ball away.
+
+As Bernard clambered down the ladder, he heard a creak, felt a jolt and then plummeted 20
+feet down into a pool of shit. He found the ball where he expected, but now he was trapped,
+with no obvious way out other than to explore the strange little sewer that lay before him
+and find another exit. "Lucky I'm carrying my axe, shotgun and 25 shells," bernard thought.
+"it always comes in handy to have some basic survival equipment in this sort of situation".
+
+
+
+BUILD INFORMATION
+=================
+
+*Editor: Worldcraft 1.6a
+*Build Time: about 4 days with KTDM4 as a base
+*Compile Time: BSP: 3 VIS: 95 Light: 7 Total: 105
+*Build Machine: Pentium-m 2.0ghz, 512mb (my laptop)
+*New Textures: Just some minor modifications of the Quake textures.
+*Brushes: 1234
+*Entities: point: 262 (108 lights), solid: 58 (some are dm only)
+*Bugs: Not that I'm aware of, but maybe some misaligned texture somewhere.
+*Source included: Yes, see the APDM3.map file for a multi-editor compatible map
+	and APDM3.rmf for a Worldcraft specific map with visgroup data included.
+*Compile Tools:
+	TreeQBSP 2.04 (BJP)		-oldaxis
+	RVIS+ 1.01 (Tyr)		-level 4
+	Remove Skip 0.0 (Tyr)
+	Light 1.41 (BJP)		-fast -soft -gate 1 -extra4 -tyrlite95 -light 20 -range 0.6 -addmin
+
+
+
+LEVELS BY THAN
+==============
+
+**RTCW**
+  MP_Checkpoint - Axis Rail Checkpoint
+**Quake**
+  DM3RMX - The Occupied Base (based on DM3)
+  APSP3 - The Curse of Knowledge (one day)
+  APSP2 - Satan's Caramel Surprise (one day)
+  APSP1 - The Final Threat
+  SM32 - Shut Up, RPG! (speed chainmap with contributions from RPG, Nightbringer and Gibbie)
+  SM28 - Structured Chaos (speed chainmap with most work done by Damaul)
+  SM24,25,26,27,29,30,33,34,37,62,99_than (regular speedmaps)
+  APDM5 - Castle of Carnage
+  APDM4 - The Lava Pools
+  APDM3 - Pretend Dead Friend
+  APDM2 - The Underground Base
+  APDM1 - The Furnace
+  APDM0 - The Tower
+**Quake 2**
+  KTIMPAKT - level pack (multiplayer map pack made with Killer and code by Skull)
+  KTDM2 - The Boilerhouse
+  KTDM4 - Pretend Best Friend
+  KTDM6 - Sandstone Crypt
+  KTDM8 - Rage Against The Machine
+  APRA2 - Wishful Thinking (Rocket Arena 2 map)
+**Counter-Strike**
+  CS_vineyard - The Vineyard
+**Duke 3D**
+  THE_BASE - The Base (my first finished level!)
+
+
+
+DISCLAIMER AND LEGAL INFO
+=========================
+
+Disclaimer
+----------
+If you injure yourself whilst playing this level, it's your own fault for being stupid,
+don't sue me. If your computer breaks whilst playing this level, it's your fault for
+having a shit computer, don't sue me. If you are outraged at any point when either reading
+this text file or playing this level, don't sue me. I have a team of highly paid lawyers
+waiting to take action against any opportunists that want my money!
+
+
+
+Copyright / Permission
+----------------------
+Kevin Costner is PROHIBITED from playing this level.

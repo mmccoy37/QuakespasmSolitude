@@ -135,16 +135,25 @@ void ( entity t_wep, float weptype ) SetWeaponAmmo =
 // sets ammo to a specific clip aspect of a weapon (current clip or extended clip)
 void ( entity t_ent, float weptype, float cliptype, float newamt ) SetAmmoFor =
 {
-/*
-_bprint(ftos(GetAmmoCount(t_ent, weptype, cliptype)), "\n");
-_bprint(ftos(newamt), "\n");
-_bprint(ftos(W_GetMaxClip(weptype, cliptype)), "\n");
-*/
-	if ( (GetAmmoCount(t_ent, weptype, cliptype)+newamt) > W_GetMaxClip(weptype, cliptype) ) {
-		newamt = W_GetMaxClip(weptype, cliptype) - GetAmmoCount(t_ent, weptype, cliptype);
-		if (newamt < 0)
-			newamt = 0;
+    local float curr_ammo = GetAmmoCount(t_ent, weptype, cliptype);
+    local float max_clip = W_GetMaxClip(weptype, cliptype);
+
+//    _bprint("curr ammo: ", ftos(curr_ammo), "\n");
+//    _bprint("newamt: ", ftos(newamt), "\n");
+//    _bprint("max clip: ", ftos(max_clip), "\n");
+
+	if ((curr_ammo + newamt) >  max_clip) {
+//        _bprint("new amount ", ftos(newamt), " exceeds max clip. correcting... \n");
+        newamt = max_clip - curr_ammo;
+        if (newamt < 0)
+            newamt = 0;
 	}
+    // fix (bandaid patch?) shotgun bug, where we get stuck in a loop of negative ammo after
+    // switching from the SMG.
+    if (curr_ammo < 0) {
+//        _bprint("new curr_ammo ", ftos(newamt), " is invalid! correcting... \n");
+        newamt = (-curr_ammo) + newamt;
+    }
 
 	switch ( weptype ) {
 		case WEAPON_PISTOL:
